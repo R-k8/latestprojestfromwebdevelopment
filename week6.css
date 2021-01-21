@@ -1,0 +1,55 @@
+/* ~~ This fixed width container surrounds all other blocks ~~ */
+.container {
+	width: 960px;
+	background-color: #ECBBF7;
+	margin: 0 auto;
+	font-style: oblique;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: centre;
+}
+/* the auto value on the sides, coupled with the width, centers the layout */
+
+body{
+    background-color: #C3FCF1;
+    text-align: center;
+}
+
+#main {
+        min-height: 200px;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        flex-flow: row;
+        text-align: centre;
+    }
+.a2{
+  min-height: 200px;
+  display: block;
+  width: 100px;
+  border: 3px solid black;
+  border-radius: 0pt;
+  background: #F2c2c3;
+  margin: 15px;
+  padding: 5px; 
+}
+.a1{
+  min-height: 300px;
+  display: block;
+  width: 150px;
+  border: 3px solid black;
+  border-radius: 0pt;
+  background: #FFE8ff;
+  margin: 20px;
+  padding: 5px; 
+}
+.aside{
+  min-height: 200px;
+  display: block;
+  width: 50px;
+  border: 3px solid black;
+  border-radius: 0pt;
+  background: #F2fedc;
+  margin: 20px;
+  padding: 5px; 
+}

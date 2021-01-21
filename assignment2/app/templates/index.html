@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<img src="{{url_for('.static', filename='img/intro.jpg')}}"></img>
+
+  
+<div class="box5" id="review">
+    <p>Reviews</p>
+    <p>Petite Treats has the best cheesecake I've ever had. Always fresh, and melts in the mouth. Would recommend highly! -- James Cook University</p>
+    <p>I'm additicted to the Danish pastries and always drop in here on my way to work. -- The Cowboys</p>
+</div>
+
+
+<div class="box6" id="contact">
+    <p>Contact Us:</p
+    <br>
+    
+      <li> Contacts: 0455 5555 555</li>
+      <li> Catering: 0433 3333 333</li>
+      <li> Address:  123 Prize lane, Kirwan, QLD</li>
+  
+  </div>
+
+
+<div class="box7">
+  <ul class="nav">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="ourstory.html">Our Story</a></li>
+  <li><a href="menu.html">Products</a></li>
+  <li><a href="specials.html">Specials</a></li>
+  <li><a href="specials.html#joinus">Join Us</a></li>
+  <li><a href="#contact">Contact Us</a></li>
+  </ul>
+</div>
+    
+{% endblock %}

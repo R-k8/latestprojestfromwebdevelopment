@@ -1,0 +1,54 @@
+<html>
+    <head>
+      {% if title %}
+      <title>{{ title }} - Web Development</title>
+      {% else %}
+      <title>Welcome to Web Development</title>
+      {% endif %}
+      <!-- add the right css file -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% block styles %}
+        <!--<link rel="stylesheet" href="{{url_for('.static', filename='styles.css')}}">-->
+        <link rel="stylesheet" href="{{url_for('.static', filename='index.css')}}">
+        <link rel="stylesheet" href="{{url_for('.static', filename='products.css')}}">
+        {% endblock %}
+    </head>
+    <body>
+      
+  <div class="wrapper">
+
+  <div class="box1">~~~ Petite Treats ~~~</div>
+
+  <div class="box2">
+  <nav>
+  <ul class="nav">
+  <li><a href="/index">Home</a></li>
+  <li><a href="/ourstory">Our Story</a></li>
+  <li><a href="/products">Products</a></li>
+  <li><a href="/specials">Specials</a></li>
+  <li><a href="/newsletter#joinus">Join Us</a></li>
+  <li><a href="/contactus#contact">Contact Us</a></li>
+  <!--<li><a class="cart" href="/cart">Cart</a></li>-->
+  </ul>
+ </nav>
+ </div>
+ 
+ 
+ 
+ <div class="box7">
+  <ul class="nav">
+    <li><a href="/index">Home</a></li>
+  <li><a href="/ourstory">Our Story</a></li>
+  <li><a href="/products">Products</a></li>
+  <li><a href="/specials">Specials</a></li>
+  <li><a href="/newsletter#joinus">Join Us</a></li>
+  <li><a href="/contactus#contact">Contact Us</a></li>
+  <li><a class="cart" href="/cart">Cart</a></li>
+  </ul>
+  </div>
+  
+    
+        {% block content %}{% endblock %}
+    <footer></footer>
+    </body>
+</html>

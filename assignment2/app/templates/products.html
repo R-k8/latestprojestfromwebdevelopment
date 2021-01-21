@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+     <div class="box3" id="products">
+      <div class="row""img">
+      
+      <div class="column">
+        <a href="/vanilla">
+      <img src="{{url_for('.static', filename='img/vanillaslice1.jpg')}}" alt="vanilla" style="width:100%"></img>
+      </div>
+      <div class="column">
+        <a href="/randy">
+      <img src="{{url_for('.static', filename='img/randytart1.jpg')}}" alt="randy" style="width:100%"></img>
+      </div>
+      <div class="column">
+        <a href="/custard">
+      <img src="{{url_for('.static', filename='img/custard1.jpg')}}" alt="custard" style="width:100%"></img>
+      </div>
+      <div class="column">
+        <a href="/applecake">
+      <img src="{{url_for('.static', filename='img/applecake2.jpg')}}" alt="apple" style="width:100%"></img>
+      </div>
+      <div class="column">
+        <a href="/raspberry">
+      <img src="{{url_for('.static', filename='img/cheesecake1.jpg')}}" alt="cheesecake" style="width:100%"></img>
+      </div>
+      <div class="column">
+        <a href="/donuts">
+      <img src="{{url_for('.static', filename='img/donut1a.jpg')}}" alt="donuts" style="width:100%"></img>
+      </div>
+{% endblock %}

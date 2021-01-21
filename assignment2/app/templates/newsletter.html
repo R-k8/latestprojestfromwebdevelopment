@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+<!-- News Letter forms -->
+{% block content %}
+<div class="newsletter">
+    <h3>News Letter</h3>
+    <form action="{{ url_for('get_newsletter') }}" method=post>
+        <div>
+            <!-- name forms -->
+            <p>
+                {{ form.name.label }} <br>
+                {{ form.name(placeholder='Your name') }}
+            </p>
+            <!-- email forms -->
+            <p>
+                {{ form.email.label }} <br>
+                {{ form.email(placeholder='Your e-mail ...') }}
+            </p>
+            
+            <!-- Submit button -->
+            <p>
+                <!--{{ form.submit }}-->
+                <form action="/action_page.php">
+                  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                  <label for="vehicle1"> I have a bike</label><br>
+                  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                  <label for="vehicle2"> I have a car</label><br>
+                  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                  <label for="vehicle3"> I have a boat</label><br><br>
+                  <input type="submit" value="Submit">
+</form>
+            </p>
+        </div>
+    </form>
+</div>
+
+{% endblock %}

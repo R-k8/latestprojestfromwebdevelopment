@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="font1">
+<p>These are our weekly specials! Get it in store or collect your orders from the store to receive 25% discount if you purchase any of our weekly specials.</p>
+<p><a href="/newsletter">Join us</a> if you want to subscript to our newsletter about our weekly specials, seasonal promotions and future new products.</p>
+</div>
+<div class="specials1">
+    <img src="{{url_for('.static', filename='img/vanillaslice1.jpg')}}" alt="vanilla" style="width:50%">  Sales price: $3.38 per slice</img>
+    <img src="{{url_for('.static', filename='img/randytart1.jpg')}}" alt="randytart1" style="width:50%">  Sales price: $2.95 per slice</img>
+    <img src="{{url_for('.static', filename='img/custard1.jpg')}}" alt="custard" style="width:50%">  Sales price: $2.95 per piece</img>
+</div>
+{% endblock %}

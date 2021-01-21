@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="story">
+    <P>
+    We are a small family-run local business specialising in traditional Australian baked goods. Our story started in 2012 in Kirwan and ever since the establishment, we have grown. Our baker is an artisan-baker trained in Paris and some of our current customers are James Cook University, the Cowboys and Telstra. Whether it is for small purchases or catering to our corporate customers, we are there to satify your palate.      
+    </P>
+    <br>
+    <p>We hope that we can continue to satisfy the community with our traditional Australian bakery. Please visit our near store near Willows Shopping centre and look out for our week special at 25% off!
+    </p>
+</div>
+
+<div class="storypic">
+    <img src="{{url_for('.static', filename='img/story.jpg')}}" alt="story" class="centre"></img>
+   
+</div>
+{% endblock %}
